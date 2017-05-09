@@ -41,10 +41,6 @@ public class SwaggerConfiguration extends WebMvcConfigurerAdapter {
                 if (properties.getRedirect()) {
                     registry.addViewController("/").setViewName("redirect:/swagger-ui.html");
                 }
-//                if (properties.getApiUrl() != null && !"".equals(properties.getApiUrl().trim())) {
-//                    registry.addViewController(properties.getApiUrl())
-//                            .setViewName("/swagger-ui.html");
-//                }
             }
         };
     }
@@ -62,16 +58,8 @@ public class SwaggerConfiguration extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/webjars/**")
-                .addResourceLocations("classpath:/webjars/");
-
         registry.addResourceHandler("/swagger-ui.html**")
-                .addResourceLocations("classpath:/static/swagger-ui.html");
-//        if (properties.getApiUrl() != null && !"".equals(properties.getApiUrl().trim())) {
-//            registry.addResourceHandler(properties.getApiUrl())
-//                    .addResourceLocations("classpath:/static/swagger-ui.html");
-//        }
-
+                .addResourceLocations("classpath:/swagger-ui.html");
     }
 
     private ApiInfo apiInfo() {

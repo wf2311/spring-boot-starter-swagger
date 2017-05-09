@@ -2,6 +2,7 @@ package com.wf2311.swagger.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import springfox.documentation.schema.AlternateTypeRule;
+import springfox.documentation.service.Contact;
 
 import java.util.Arrays;
 
