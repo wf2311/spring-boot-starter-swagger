@@ -7,7 +7,7 @@ import springfox.documentation.service.Contact;
 import java.util.Arrays;
 
 /**
- * @author wangfeng
+ * @author wf2311
  * @time 2017/04/25 20:32.
  */
 @ConfigurationProperties(prefix = "wf2311.swagger")
