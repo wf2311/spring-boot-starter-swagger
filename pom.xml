@@ -5,24 +5,60 @@
 
 	<groupId>com.wf2311</groupId>
 	<artifactId>spring-boot-starter-swagger</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-starter-swagger</name>
+	<name>${project.groupId}:${project.artifactId}</name>
 	<description>spring-boot-starter-swagger</description>
+	<url>https://github.com/wf2311/spring-boot-starter-swagger</url>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>wf2311</name>
+			<email>wf2311@163.com</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+8</timezone>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:git:https://github.com/wf2311/spring-boot-starter-swagger.git</connection>
+		<developerConnection>scm:git:https://github.com/wf2311/spring-boot-starter-swagger.git</developerConnection>
+		<url>https://github.com/wf2311/spring-boot-starter-swagger</url>
+		<tag>v${project.version}</tag>
+	</scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<name>Maven Central Staging Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.3.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<swagger.version>2.6.1</swagger.version>
+		<swagger.version>2.7.0</swagger.version>
 	</properties>
 
 	<dependencies>
