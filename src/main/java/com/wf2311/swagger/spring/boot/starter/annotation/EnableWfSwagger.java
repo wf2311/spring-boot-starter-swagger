@@ -9,7 +9,7 @@ import java.lang.annotation.*;
 
 /**
  * @author wf2311
- * @time 2017/04/25 20:31.
+ * @date 2017/04/25 20:31.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
