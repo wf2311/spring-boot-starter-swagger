@@ -1,6 +1,6 @@
-package com.wf2311.swagger.configuration;
+package com.wf2311.swagger.spring.boot.starter.configuration;
 
-import com.wf2311.swagger.properties.SwaggerConfigurationProperties;
+import com.wf2311.swagger.spring.boot.starter.properties.SwaggerConfigurationProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -18,7 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @author wf2311
- * @time 2017/04/25 20:31.
+ * @date  2017/04/25 20:31.
  */
 @EnableSwagger2
 @EnableConfigurationProperties(SwaggerConfigurationProperties.class)

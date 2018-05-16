@@ -1,4 +1,4 @@
-package com.wf2311.swagger;
+package com.wf2311.swagger.spring.boot.starter.annotation;
 
 import com.wf2311.swagger.configuration.SwaggerConfiguration;
 import org.springframework.context.annotation.Import;

@@ -1,14 +1,13 @@
-package com.wf2311.swagger.properties;
+package com.wf2311.swagger.spring.boot.starter.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import springfox.documentation.schema.AlternateTypeRule;
-import springfox.documentation.service.Contact;
 
 import java.util.Arrays;
 
 /**
  * @author wf2311
- * @time 2017/04/25 20:32.
+ * @date  2017/04/25 20:32.
  */
 @ConfigurationProperties(prefix = "wf2311.swagger")
 public class SwaggerConfigurationProperties {
