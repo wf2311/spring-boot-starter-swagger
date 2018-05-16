@@ -1,6 +1,6 @@
 package com.wf2311.swagger.spring.boot.starter.annotation;
 
-import com.wf2311.swagger.configuration.SwaggerConfiguration;
+import com.wf2311.swagger.spring.boot.starter.configuration.SwaggerConfiguration;
 import org.springframework.context.annotation.Import;
 import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration;
 
